@@ -1,0 +1,55 @@
+#pragma once
+template<class ItemType>
+class InsertSort
+{
+	//counter variables 
+private:
+	int swapCount = 0;
+	int compCount = 0;
+
+public:
+	template<class ItemType>
+	void InsertItem(ItemType values[], int startIndex, int
+		endIndex)
+		// Post: values[0]..values[endIndex] are now sorted.
+	{
+		bool finished = false;
+		int current = endIndex;
+		bool moreToSearch = (current != startIndex);
+
+		while (moreToSearch && !finished)
+		{
+			compCount++;
+			if (values[current] < values[current - 1])
+			{
+				swapCount++;
+				Swap(values[current], values[current - 1]);
+				current--;
+				moreToSearch = (current != startIndex);
+			}
+			else
+				finished = true;
+		}
+	}
+
+	template<class ItemType>
+	void InsertionSort(ItemType values[], int numValues)
+		// Post: The elements in the array values are sorted by key.
+	{
+		for (int count = 0; count < numValues; count++)
+			InsertItem(values, 0, count);
+	}
+	int SwapCounterP() {
+		return swapCount;
+	}
+	//return private counter integer 
+	int CompCounterP() {
+		return compCount;
+	}
+	int ResetCounters() {
+		swapCount = 0;
+		compCount = 0;
+		return 0;
+	}
+
+};

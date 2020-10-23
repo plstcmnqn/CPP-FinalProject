@@ -1,0 +1,51 @@
+100 Integers Sorting
+Results from SelectionSort: 
+ Swaps: 98
+Comparisons: 4851
+
+Results from BubbleSort: 
+Swaps: 2478
+Comparisons: 4949
+
+Results from MergeSort: 
+Swaps: 0
+Comparisons: 871
+
+Results from QuickSort: 
+Swaps: 158
+Comparisons: 1152
+
+Results from InsertionSort: 
+Swaps: 2478
+Comparisons: 2574
+
+Results from HeapSort: 
+Swaps: 99
+Comparisons: 2190
+
+
+1000 Integers Sorting
+Results from SelectionSort: 
+Swaps: 998
+Comparisons: 498501
+
+Results from BubbleSort: 
+Swaps: 252635
+Comparisons: 499499
+
+Results from MergeSort: 
+Swaps: 0
+Comparisons: 11975
+
+Results from QuickSort: 
+Swaps: 2329
+Comparisons: 18557
+
+Results from InsertionSort: 
+Swaps: 252635
+Comparisons: 253628
+
+Results from HeapSort: 
+Swaps: 999
+Comparisons: 34824
+
