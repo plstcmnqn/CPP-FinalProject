@@ -1,6 +1,6 @@
 # CPP-FinalProject
 
-Final Project for Data Structures Algorithm course
+Final Project for Data Structures & Algorithms course
 
 Compare the number of swaps the sorting algorithms perform
 from the input text file containing integers.
